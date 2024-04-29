@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Minimal Blog Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sora: ["Sora", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="pt-[164px] bg-[#FAFAF9]">
+    <article
+      class="w-[368px] rounded-[16px] px-[16px] pt-[16px] pb-[20px] mx-auto bg-white shadow-[10px_10px_20px_0_rgba(17,23,41,0.1)]"
+    >
+      <img src="cactus_img.jpg" class="rounded-xl" />
+      <ul class="mt-[16px]">
+        <li
+          class="inline-block px-[16px] py-[6px] rounded-full bg-[#E6D6FC] text-[#883AE1] text-[10px] font-sora font-bold"
+        >
+          Design
+        </li>
+      </ul>
+      <h2
+        class="mt-[16px] mb-[6px] text-[#20293A] text-[18px] font-sora font-semibold"
+      >
+        Embracing Minimalism
+      </h2>
+      <div class="pb-[20px] border-b border-[#E5EAF0]">
+        <p class="text-[#6C727F] text-[14px] font-sora font-light">
+          From minimalist sculptures to minimalist paintings, this blog will
+          inspire you to appreciate the beauty that lies in simplicity.
+        </p>
+      </div>
+      <footer class="pt-[20px]">
+        <p class="text-[#6C727F] text-[12px] font-sora font-normal">
+          Annie Spratt
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
